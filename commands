@@ -198,7 +198,25 @@ tar -xvzf filename.tar.gz destination : extract tar files in destination
 
 File transfer commands
 
+In Local
 
+From local to server
+
+scp -i "/Users/Downloads/linux-for-devops-key.pem" filename ubuntu@ec2-3-15-221-86.us-east-2.compute.amazonaws.com:/home/ubuntu
+
+From server to local
+
+scp -i "/Users/Downloads/linux-for-devops-key.pem" -r ubuntu@ec2-3-15-221-86.us-east-2.compute.amazonaws.com:/home/ubuntu/linux .
+
+Sync local server
+
+Install rsync
+
+rsync -e "ssh -i /Users/Downloads/linux-for-devops-key.pem" -avz localpath ubuntu@ec2-3-15-221-86.us-east-2.compute.amazonaws.com:/home/ubuntu
+
+-------------------
+
+Networking Commands
 
 
 
