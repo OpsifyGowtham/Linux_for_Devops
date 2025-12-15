@@ -218,6 +218,42 @@ rsync -e "ssh -i /Users/Downloads/linux-for-devops-key.pem" -avz localpath ubunt
 
 Networking Commands
 
+ping website : Command whether we are able to fetch resource from destination
+
+sudo apt install net-tools
+
+netstat : Network statistics (Active internet connections)
+
+ifconfig : Network interfaces (eth - ethernet, lo - local host)
+
+sudo apt install traceroute
+sudo apt install inetutils-traceroute
+
+traceroute youtube.com : IP hops
+
+tracepath youtube.com : path hops
+
+mtr youtube.com : my trace route - pings and tracepath
+
+nslookup youtube.com : ip address of website port 80 port 443 ips
+
+telnet youtube.com : connect to a website via port
+
+hostname : displays ip address
+
+cat /etc/hosts/ : hosts details
+
+ip address show : details of ip address
+
+sudo apt install wireless-tools
+
+iwconfig : wireless attachment details
+
+
+
+
+
+
 
 
 
