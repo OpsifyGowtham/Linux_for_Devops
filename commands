@@ -1,0 +1,7 @@
+date : Displays date in UTC format
+
+ls : List all files in the current directory
+ls -l : Detailed view of all files
+
+pwd : Current working directory path
+
