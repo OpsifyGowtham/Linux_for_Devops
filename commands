@@ -9,6 +9,10 @@ mkdir : creates new working directory
 
 touch <filename> : creates a new file
 
-cd : change directoryà
+cd : change directory
 cd .. : previous path
+
+rm <filename> : remove file
+
+rm -r <directory name> : remove directory recursively
 
