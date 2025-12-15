@@ -14,5 +14,16 @@ cd .. : previous path
 
 rm <filename> : remove file
 
-rm -r <directory name> : remove directory recursively
+rm -r <directory name> : remove files recursively
+
+rmdir <directory name> : removes directory
+
+cat <filename> : displays content in the file
+
+echo "text" : prints content on the screen
+
+echo "text" > filename : Adds the text to file if file exists or creates a new file
+
+
+
 
