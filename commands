@@ -176,12 +176,27 @@ chmod 777 filename : changes permissions according to the above value
 
 umask : Default permission of a newly added file
 
-sudo chown username : change ownership
+sudo chown username filename : change ownership
 
+sudo chgrp groupname filename : change group
 
+-------------------
 
+Compression commands
 
+sudo apt install zip
 
+zip -r file.zip filename : zips a file into a filename with zip extension
+
+unzip file.zip : unzip a file
+
+tar -cvzf filename.tar.gz filename : compresses file in tar
+
+tar -xvzf filename.tar.gz destination : extract tar files in destination
+
+-------------------
+
+File transfer commands
 
 
 
