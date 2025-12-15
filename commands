@@ -1,3 +1,5 @@
+-------BASICS-------
+
 date : Displays date in UTC format
 
 ls : List all files in the current directory
@@ -23,6 +25,171 @@ cat <filename> : displays content in the file
 echo "text" : prints content on the screen
 
 echo "text" > filename : Adds the text to file if file exists or creates a new file
+
+head -n 5 <filename> : Displays first 5 lines
+
+tail -n 5 <filenmae> : displays last 5 lines
+
+tail -f <filename> : Displays new logs adding to the file
+
+less <filename> : paginated view of file
+
+more <filename> : more pages
+
+-------------------
+
+cp sourcefile destinationpath : copying files
+
+cp -r source destination : recursive copying
+
+mv source destination : moving files
+
+mv filename newfilename : rename files
+
+wc filename : word count of the file  
+
+ln -s /path/file softlink-file : Create softlink in the present directory
+
+ln /path/file hardlink-file : Create hardlink in the present directory
+
+cut -b 1-4 filename: Gives a small portion from the file
+
+echo "Hello" | tee file : Prints and puts content in the file
+
+sort filename : sorts contents
+
+clear : clears the screen
+
+diff file1 file2 : Difference between two files
+
+wc file1 file2 file3 : Displays word count in each files
+
+vi/vim filename : text editor where we can edit files with advanced features.
+
+-------------------
+
+ssh-keygen : creates public and private keys
+
+Disk Usage
+
+df -h : disk usage
+
+du . : disk utility
+
+Processes
+
+top -h : processes running
+
+ps : process id
+
+fuser : file system user (Network Attached Storage)
+
+kill -9 processid : kills a process
+
+free -h : Shows Disk space
+
+nohup free -h : Stores logs in nohup.out and adds on next
+
+vmstat -a : Displays virtual memory(RAM)
+
+-------------------
+
+System Level Commands
+
+uname : Displays which platform
+
+uptime : How long system is runing in UTC
+
+who : displays list of users logged in and for how long
+
+whoami : current user 
+
+which : displays location of the command
+
+id : Displays uid,gid,groups of the users
+
+sudo : super user do - root user has all permission (sudo is a group)
+
+cat /etc/passwd : list of users
+
+sudo shutdown : shutdowns the system
+
+sudo reboot : resboots the system
+
+apt : application package manager for ubuntu
+
+sudo apt-get update
+sudo apt-get install docker.io
+sudo apt remove docker.io
+
+yum : application package manager for CentOS
+
+dnf : application package manager for Fedora
+
+pacman : application package manager for Arch Linux
+
+portage : application package manager for Gentoo Linux
+
+rpm : application package manager for RedHat
+
+-------------------
+
+User & Group management commands
+
+sudo useradd -m username : User will be created in /home/
+
+sudo passwd username : Adds password to user
+
+su username : switches user
+
+sudo userdel username : Deletes user
+
+sudo groupadd groupname : Creates groups
+
+cat /etc/group : Displays list of groups
+
+sudo gpasswd -a username groupname : Adds user to a group
+
+sudo gpasswd -M user1,user2,user3 groupname : Adds multiple users to a group
+
+sudo groupdel groupname : Deletes group
+
+
+-------------------
+
+File permission commands
+
+ls -l : List the contents in the directory with permissions
+
+r-read w-write x-execute
+
+---  0
+--x  1
+-w-  2
+-wx  3
+r--  4
+r-x  5
+rw-  6
+rwx  7
+
+chmod 777 filename : changes permissions according to the above value
+
+umask : Default permission of a newly added file
+
+sudo chown username : change ownership
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
