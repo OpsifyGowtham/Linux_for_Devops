@@ -317,6 +317,29 @@ ps aux | grep ubuntu | awk '{print $2]'
 
 Linux Volume Management
 
+lsblk : Display blocks
+
+sudo su
+
+lvm : Logical volume manager
+
+pvcreate /dev/xvdf /dev/xvdg /dev/xvdh : physical volume create
+
+pvs : physical volume list
+
+vgcreate og_vg /dev/xvdf /dev/xvdg : Creates volume group
+
+vgs : List Volume groups
+
+lvcreate -L 10G -n og_lv og_vg : Logical volume create
+
+pvdisplay : Physical volume diaplays
+
+mkdir /mnt/og_lv_mount
+
+mkfs.ext4 /dev/og_vg/og_lv
+
+mount /dev/og_vg/og_lv /mnt/og_lv_mount
 
 
 
