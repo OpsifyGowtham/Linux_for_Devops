@@ -249,14 +249,73 @@ sudo apt install wireless-tools
 
 iwconfig : wireless attachment details
 
+ss : netsat other version
 
+dig youtube.com : website hosted details
 
+whois youtube.com : Entire details of domain
 
+nc youtube.com 80 :
 
+arp : mac address of hardwares
 
+ifplugstatus : Interfaces running
 
+curl -x get apiendpoint | jq : to get response from server through API in a beautiful way
 
+wget link address : Download from internet
 
+iptables : Route details
+
+watch -n 5 top : Checks continuously
+
+nmap -v youtube.com : Network map
+
+route : Route tables for internet gateway
+
+-------------------
+
+PRO Linux Commands
+
+awk '{print}' app.log 
+
+awk '{print $1,$2}' app.log : Displays only particular columns
+
+awk '/INFO/ {print $1,$2}' app.log : Filters with the keyword
+
+awk '/INFO/ {print $1,$2}' app.log > only_info.log : Saves in a file
+
+awk '/INFO/ {count++} END {print "Count is",count}' app.log : Count the info and print
+
+awk '$2 >= "08:53" && $2 <= "08:54" {print $2,$3,$4}' app.log : Range of logs
+
+awk 'NR >=2 && NR <=10 {print NR}' app.log : 
+
+awk requires comma separated values, tab separated values(formatted values)
+
+sed -n '/INFO/p' app.log (sed -stream editor)
+
+sed 's/INFO/LOG/g' app.log : Replace
+
+sed -n -e '/INFO/=' app.log
+
+sed -n -e '/INFO/=' -e '/INFO/p' app.log
+
+sed '1,10 s/INFO/LOG/g' app.log
+
+grep (global regular expression print)
+
+grep -i info app.log
+
+grep -i -c info app.log
+
+ps aux | grep ubuntu
+
+ps aux | grep ubuntu | awk '{print $2]'
+
+-------------------
+
+Linux Volume Management
 
 
 
