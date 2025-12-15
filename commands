@@ -5,3 +5,10 @@ ls -l : Detailed view of all files
 
 pwd : Current working directory path
 
+mkdir : creates new working directory
+
+touch <filename> : creates a new file
+
+cd : change directoryà
+cd .. : previous path
+
